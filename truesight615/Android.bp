@@ -1,0 +1,120 @@
+//
+// SPDX-FileCopyrightText: 2026 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+// Front camera beauty (libTrueSight) on a private Adreno 0615.95 copy,
+// see ts6_shim.c. Lives in the vendor/xiaomi/zeus soong namespace.
+
+cc_library_shared {
+    name: "libtsegl6",
+    srcs: [
+        "ts6_shim.c",
+        "ts6_slow.S",
+        "ts6_tramp.S",
+    ],
+    shared_libs: [
+        "libdl",
+        "liblog",
+    ],
+    // dlopen()ed by ts6_resolve()
+    required: [
+        "eglSubDriverAndroi6",
+        "libEGL_adren6",
+        "libGLESv2_adren6",
+        "libadreno_util6",
+        "libgs6",
+        "libllvm-glnex6",
+        "libllvm-qg6",
+    ],
+    compile_multilib: "64",
+    soc_specific: true,
+}
+
+// Adreno 0615.95 from vendor/xiaomi/sm8450-common 5389f7a, with every
+// soname/dlopen name aliased (e.g. libgsl.so -> libgs6.so) and NEEDED
+// entries pointing at /vendor/lib64/camera so it never resolves to the
+// system driver.
+
+cc_prebuilt_library_shared {
+    name: "eglSubDriverAndroi6",
+    srcs: ["lib64/eglSubDriverAndroi6.so"],
+    compile_multilib: "64",
+    relative_install_path: "camera",
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libEGL_adren6",
+    srcs: ["lib64/libEGL_adren6.so"],
+    compile_multilib: "64",
+    relative_install_path: "camera",
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libGLESv2_adren6",
+    srcs: ["lib64/libGLESv2_adren6.so"],
+    compile_multilib: "64",
+    relative_install_path: "camera",
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libadreno_util6",
+    srcs: ["lib64/libadreno_util6.so"],
+    compile_multilib: "64",
+    relative_install_path: "camera",
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgs6",
+    srcs: ["lib64/libgs6.so"],
+    compile_multilib: "64",
+    relative_install_path: "camera",
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libllvm-glnex6",
+    srcs: ["lib64/libllvm-glnex6.so"],
+    compile_multilib: "64",
+    relative_install_path: "camera",
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libllvm-qg6",
+    srcs: ["lib64/libllvm-qg6.so"],
+    compile_multilib: "64",
+    relative_install_path: "camera",
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    soc_specific: true,
+}

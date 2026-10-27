@@ -7342,6 +7342,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libTrueSight.so",
             ],
             shared_libs: [
+                "libtsegl6",
                 "liblog",
                 "libz",
                 "libEGL",
