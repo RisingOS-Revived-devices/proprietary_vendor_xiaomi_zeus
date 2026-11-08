@@ -6107,6 +6107,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/camera.qcom.so",
             ],
             shared_libs: [
+                "libcamximageformatutils_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
