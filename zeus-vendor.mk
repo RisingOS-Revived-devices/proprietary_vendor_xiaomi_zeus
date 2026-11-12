@@ -89,6 +89,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/zeus/proprietary/vendor/etc/camera/hdrcheckerparamsettings.yml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hdrcheckerparamsettings.yml \
     vendor/xiaomi/zeus/proprietary/vendor/etc/camera/his_conf_preview.yaml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/his_conf_preview.yaml \
     vendor/xiaomi/zeus/proprietary/vendor/etc/camera/his_conf_video.yaml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/his_conf_video.yaml \
+    vendor/xiaomi/zeus/proprietary/vendor/etc/camera/megviifacepp_0_5_2_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/megviifacepp_0_5_2_model \
     vendor/xiaomi/zeus/proprietary/vendor/etc/camera/miai_hdr_config.yaml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/miai_hdr_config.yaml \
     vendor/xiaomi/zeus/proprietary/vendor/etc/camera/miai_psn_config.yaml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/miai_psn_config.yaml \
     vendor/xiaomi/zeus/proprietary/vendor/etc/camera/mialgo_seg_ldc_parameters.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mialgo_seg_ldc_parameters.json \
@@ -334,6 +335,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/zeus/proprietary/vendor/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sceneDetection.xml \
     vendor/xiaomi/zeus/proprietary/vendor/etc/camera/siq_ocl_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/siq_ocl_cache \
     vendor/xiaomi/zeus/proprietary/vendor/etc/camera/sr_params.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sr_params.xml \
+    vendor/xiaomi/zeus/proprietary/vendor/etc/camera/st_license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/st_license.lic \
     vendor/xiaomi/zeus/proprietary/vendor/etc/camera/superiq_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/superiq_model \
     vendor/xiaomi/zeus/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/xiaomi/zeus/proprietary/vendor/etc/camera/xiaomi/dualbokehjpegsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/dualbokehjpegsnapshot.json \
@@ -356,6 +358,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/zeus/proprietary/vendor/etc/camera/xiaomi/thirdpartysnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/thirdpartysnapshot.json \
     vendor/xiaomi/zeus/proprietary/vendor/etc/camera/zeus_enhance_motiontuning.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/zeus_enhance_motiontuning.xml \
     vendor/xiaomi/zeus/proprietary/vendor/etc/camera/zeus_motiontuning.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/zeus_motiontuning.xml \
+    vendor/xiaomi/zeus/proprietary/vendor/etc/display/backlight_calib_xiaomi_38_0c_0a_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_xiaomi_38_0c_0a_cmd_mode_dsc_dsi_panel.xml \
     vendor/xiaomi/zeus/proprietary/vendor/etc/display/qdcm_calib_data_xiaomi_38_0c_0a_cmd_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_xiaomi_38_0c_0a_cmd_mode_dsc_dsi_panel.json \
     vendor/xiaomi/zeus/proprietary/vendor/etc/displayconfig/display_id_4630947134992368257.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947134992368257.xml \
     vendor/xiaomi/zeus/proprietary/vendor/etc/init/hw/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.batterysecret.rc \
